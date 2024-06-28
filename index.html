@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+     <link rel="stylesheet" href="./css/index.css">
+     <!-- Link TailwindCSS -->
+     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- Link FontAwesome -->
+      <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     <!-- Script.JS -->
+      <script src="./js/script.js" defer></script>
+    <title>نجار الرياض - معلم نجارة وموبيليا</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <header class="bg-gray-100 shadow-lg">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between p-8 lg:px-8" aria-label="Global">
+    <div class="flex lg:flex-1">
+      <a href="#" class="-m-1.5 p-1.5">
+        <img class="w-[200px]" src="./imgs/logo.png" alt="">
+      </a>
+    </div>
+    <div class="flex lg:hidden">
+      <button id="menu-button" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <span class="sr-only">Open main menu</span>
+        <svg class="h-12 w-12 font-bold" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+    <div class="hidden lg:flex lg:gap-x-12">
+      <a href="#" class="text-2xl font-semibold leading-6 text-gray-700 hover:text-gray-950 transition">الرئيسية</a>
+      <a href="#" class="text-2xl font-semibold leading-6 text-gray-700 hover:text-gray-950 transition">خدماتنا</a>
+      <a href="#" class="text-2xl font-semibold leading-6 text-gray-700 hover:text-gray-950 transition">معرض اعمالنا</a>
+      <a href="#" class="text-2xl font-semibold leading-6 text-gray-700 hover:text-gray-950 transition">اتصل بنا</a>
+      <br>
+      <a href="https://wa.me/9660507922240" class="text-2xl font-semibold leading-6 text-gray-700 hover:text-gray-950 transition">واتساب: +966507922240</a>
+      <a href="tel:+966507922240" class="text-2xl font-semibold leading-6 text-gray-700 hover:text-gray-950 transition">جوال: +966507922240</a>
+    </div>
+  </nav>
+  <div id="mobile-menu" class="lg:hidden fixed inset-0 z-10 hidden">
+    <div class="fixed inset-0 z-10 bg-gray-900 opacity-50"></div>
+    <div class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <div class="flex items-center justify-between">
+        <a href="#" class="p-1.5">
+          <img class="w-[200px]" src="./imgs/logo.png" alt="">
+        </a>
+        <button id="close-menu-button" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Close menu</span>
+          <svg class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="mt-6 flow-root">
+        <div class="-my-6 divide-y divide-gray-500/10">
+          <div class="space-y-2 py-6">
+            <a href="#" class="-mx-3 block rounded-lg text-2xl font-medium px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">الرئيسية</a>
+            <a href="#" class="-mx-3 block rounded-lg text-2xl font-medium px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">خدماتنا</a>
+            <a href="#" class="-mx-3 block rounded-lg text-2xl font-medium px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">معرض اعمالنا</a>
+            <a href="#" class="-mx-3 block rounded-lg text-2xl font-medium px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">اتصل بنا</a>
+            <br>
+            <a href="https://wa.me/9660507922240" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">واتساب: +966507922240</a>
+            <a href="tel:+966507922240" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">جوال: +966507922240</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <!-- End Header -->
+
+    <!-- Start Hero Section -->
+
+<section
+  class="relative mt-5 mb-5 bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat"
+>
+  <div
+    class="absolute inset-0 bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
+  ></div>
+
+  <div
+    class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+  >
+    <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+      <h1 class="text-3xl font-extrabold w-[600px] text-white sm:text-5xl" style="line-height: 1.2;">
+        فني نجار بالرياض، معلمين فك وتركيب مطابخ بالرياض، نجار موبيليا بالرياض
+      </h1>
+
+      <p class="mt-4 w-[800px] text-white sm:text-2xl/relaxed">
+        معلم نجارة .. تميزنا وما زلنا في أعمال المقاولات وذلك في مجال ب النجارة بالرياض صيانة وترميم النجارة والموبيليا، نجار دولايب بالرياض كما نفخر بشهادة عملائنا في أننا معلمين نجارة الأولى بالرياض ، وفك ونقل دواليب غرف نوم ومطابخ بالرياض
+      </p>
+      <br>
+      <p class="mt-4 w-[800px] text-white sm:text-2xl/relaxed">
+صيانة غرف نوم نغطي جميع أحياء الرياض معلم نجارة الرياض نجار تركيب وفك موبيليا بالرياض،
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4 text-center">
+        <a
+          href="https://wa.me/9660507922240"
+          class="block w-full rounded bg-rose-600 px-12 py-3 text-2xl font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+        >
+          واتساب
+        </a>
+
+        <a
+          href="tel:+966507922240"
+          class="block w-full rounded bg-white px-12 py-3 text-2xl font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+        >
+          جوال
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <!-- End Hero Section -->
+
+    <!-- Cards -->
+<div class="max-w-6xl mx-auto p-5">
+  <div class="title mb-6 mt-8">
+    <h1 class="text-center text-4xl font-bold">فني نجار بالرياض،تفصيل دواليب بالرياض ، ورشة نجارة بالرياض</h1>
+    <p class="text-center text-2xl mt-3">معلم نجارة .. تميزنا وما زلنا في أعمال المقاولات وذلك في مجال ب النجارة بالرياض صيانة وترميم النجارة والموبيليا</p>
+  </div>
+        <div class="flex flex-wrap -mx-4">
+            <!-- Card Start -->
+            <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-6">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100%] h-[300px]" src="./imgs/img5.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-gray-900 font-bold text-3xl tracking-tight mb-2 dark:text-white">نجار موبيليا</h5>
+                        </a>
+                        <p class="font-medium text-xl text-gray-100 mb-3 dark:text-gray-400">توفير أفضل معلمين نجار موبيليا في الرياض ، معلم
+                           نجار موبيليا بالرياض ، تركيب جميع انوع موبيليا و تغطي جميع أحياء الرياض
+                          </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-6">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100%] h-[300px]" src="./imgs/img6.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-gray-900 font-bold text-3xl tracking-tight mb-2 dark:text-white">نجار دولايب</h5>
+                        </a>
+                        <p class="font-medium text-xl text-gray-100 mb-3 dark:text-gray-400">توفير أفضل معلمين نجار
+                           دولايب في الرياض ، معلم صيانة
+                            دواليب بالرياض تركيب جميع انوع الدولايب و تغطي جميع أحياء الرياض
+                          </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-6">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100%] h-[300px]" src="./imgs/img7.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-gray-900 font-bold text-3xl tracking-tight mb-2 dark:text-white">منجرة</h5>
+                        </a>
+                        <p class="font-medium text-xl text-gray-100 mb-3 dark:text-gray-400">منجرة النجارة جميع انواع اعمال النجارة نجارة ابواب دواليب مطاابخ موبيليا في الرياض بدقة وسرعة واتقان عالي .</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-6">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100%] h-[300px]" src="./imgs/img8.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-gray-900 font-bold text-3xl tracking-tight mb-2 dark:text-white">فك وتركيب مطابخ</h5>
+                        </a>
+                        <p class="font-medium text-xl text-gray-100 mb-3 dark:text-gray-400">نوفر أفضل معلمين فك وتركيب مطابخ في الرياض ، ورش نجارة مطابخ في الرياض ، تركيب جميع انوع المطابخ و تغطي جميع أحياء الرياض</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-6">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100%] h-[300px]" src="./imgs/img9.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-gray-900 font-bold text-3xl tracking-tight mb-2 dark:text-white">نجار ابواب</h5>
+                        </a>
+                        <p class="font-medium text-xl text-gray-100 mb-3 dark:text-gray-400">توفير أفضل معلم نجار ابواب في الرياض ، معلم صيانة
+                          وتركيب ابواب بالرياض بخبرات عالية ، تركيب جميع انوع الابواب و تغطي جميع أحياء الرياض
+                          </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-6">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100%] h-[300px]" src="./imgs/img10.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-gray-900 font-bold text-3xl tracking-tight mb-2 dark:text-white">تفصيل غرف نوم</h5>
+                        </a>
+                        <p class="font-medium text-xl text-gray-100 mb-3 dark:text-gray-400">توفير أفضل ورش نجارة وتفصل غرف النوم في الرياض ، صيانة غرف نوم بالرياض ، تركيب جميع انوع غرف النوم و تغطي جميع أحياء الرياض</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Cards -->
+
+    <!-- SliderImages -->
+    <section class="mb-28">
+  <div class="title relative text-center mb-16 text-4xl font-bold">
+    <h1>أعمالنا في الرياض</h1>
+    <p class="w-24 h-1 rounded-sm bg-rose-600 mx-auto mt-5"></p>
+  </div>
+  <div class="slider max-w-screen-xl mx-auto px-4 overflow-hidden">
+    <div class="slides flex overflow-x-auto space-x-4">
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img1.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img2.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img3.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img4.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img5.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img6.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img7.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img8.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img9.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img10.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img11.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img12.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img13.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img14.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img14.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img12.jpg" alt="..." class="w-full h-auto" />
+      </div>
+      <div class="slide flex-shrink-0 w-64">
+        <img src="./imgs/img11.jpg" alt="..." class="w-full h-auto" />
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- SliderImages -->
+
+    <!-- ContactUs -->
+     <div class="container my-12 mx-auto px-2 md:px-4">
+
+    <section class="mb-32">
+
+        <div class="flex justify-center">
+            <div class="text-center md:max-w-xl lg:max-w-3xl">
+                <h2 class="mb-12 px-6 text-5xl font-bold">
+                    ـــــــ تواصل بنا الأن ـــــــ
+                </h2>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap">
+
+            <form class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+
+                <div class="mb-3 w-full">
+                    <label class="block font-medium text-xl mb-[2px] text-teal-700" htmlFor="exampleInput90">
+                            الاسم
+                    </label>
+                    <input type="text" class="px-2 py-2 text-xl border w-full outline-none rounded-md" id="exampleInput90" placeholder="الاسم" />
+                </div>
+
+                <div class="mb-3 w-full">
+                    <label class="block font-medium text-xl mb-[2px] text-teal-700" htmlFor="exampleInput90">
+                            الايميل
+                    </label>
+                    <input type="email" class="px-2 text-xl py-2 border w-full outline-none rounded-md" id="exampleInput90"
+                            placeholder="الايميل" />
+                </div>
+
+                <div class="mb-3 w-full">
+                    <label class="block font-medium text-xl mb-[2px] text-teal-700" htmlFor="exampleInput90">
+                            اترك لنا رسالة
+                    </label>
+                    <textarea class="px-2 py-2 border rounded-[5px] w-full outline-none" name="" id=""></textarea>
+                </div>
+
+                <button type="button"
+                        class="mb-6 inline-block w-full text-xl rounded bg-teal-400 px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-teal-500">
+                        ارسال
+                </button>
+
+            </form>
+
+            <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+                <div class="flex flex-wrap">
+                    <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                        <div class="flex items-start">
+                            <div class="shrink-0">
+                                <div class="inline-block rounded-md bg-teal-400-100 p-4 text-teal-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" class="h-12 w-12">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-6 grow">
+                                <p class="mb-2 text-2xl font-bold">
+                                    Technical support
+                                </p>
+                                <p class="text-neutral-500 text-xl ">
+                                    support@example.com
+                                </p>
+                                <p class="text-neutral-500 text-xl ">
+                                    +9660507922240
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                        <div class="align-start flex">
+                            <div class="shrink-0">
+                                <div class="inline-block rounded-md bg-teal-400-100 p-4 text-teal-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" class="h-12 w-12">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-6 grow">
+                                <p class="mb-2 text-2xl font-bold ">Press</p>
+                                <p class="text-neutral-500 text-xl ">
+                                    press@example.com
+                                </p>
+                                <p class="text-neutral-500 text-xl ">
+                                    +9660507922240
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-12 w-full text-center shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                        <a href="https://wa.me/+9660507922240" class="bg-rose-500 p-2 shadow-lg rounded text-2xl font-medium" style="padding: 0 80px;">واتساب</a>
+                    </div>
+                    <div class="mb-12 w-full text-center shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+                        <a href="tel:+966507922240" class="bg-gray-200 text-rose-600 shadow-lg p-2 rounded text-2xl font-medium" style="padding: 0 80px;">جوال</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+    <!-- ContactUs -->
+
+    <!-- Floating Button -->
+<div class = "group fixed bottom-0 left-12 p-8  flex items-end justify-end w-36 h-36 ">
+    <!-- main -->
+    <div class = "text-white shadow-xl flex items-center justify-center p-5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 z-50 absolute  ">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 group-hover:rotate-90 transition  transition-all duration-[0.6s]">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+    </div>
+    <!-- sub left -->
+    <div class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16   flex  p-2 hover:p-3 bg-green-300 scale-100 hover:bg-green-400 text-white">
+                <a href="https://wa.me/+9660507922240" class="w-[40px] h-[40px] text-center text-gray-950 text-4xl"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <!-- sub top -->
+    <div class="absolute mb-5 rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-16  flex  p-2 hover:p-3 bg-blue-300 hover:bg-blue-400  text-white">
+        <a href="tel:+966507922240" class="w-[40px] h-[40px] text-center text-gray-950 text-4xl"><i class="fa-solid fa-phone"></i></a>
+    </div>
+</div>
+    <!-- Floating Button -->
+
+    <!-- Start Footer -->
+        <section class="bg-white w-full">
+  <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+    <p class="mt-8 text-xl leading-6 text-center text-gray-600">
+      حقوق النشر © 2024 جميع الحقوق محفوظة - معلم نجار بالرياض
+    </p>
+    <br>
+    <p class="text-center text-lg font-medium">
+      تسويق: <a href="tel:+201067265401">01067265401</a> || eng : Keroles
+    </p>
+  </div>
+</section>
+    <!-- End Footer -->
+</body>
+</html>
