@@ -21,7 +21,7 @@
   <nav class="mx-auto flex max-w-7xl items-center justify-between p-8 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
       <a href="#" class="-m-1.5 p-1.5">
-        <img class="w-[200px]" src="./imgs/logo.png" alt="">
+        <img class="w-[200px]" src="./imgs/logo.png" alt="Logo">
       </a>
     </div>
     <div class="flex lg:hidden">
@@ -37,7 +37,6 @@
       <a href="#" class="text-2xl font-semibold leading-6 text-gray-700 hover:text-gray-950 transition">خدماتنا</a>
       <a href="#" class="text-2xl font-semibold leading-6 text-gray-700 hover:text-gray-950 transition">معرض اعمالنا</a>
       <a href="#" class="text-2xl font-semibold leading-6 text-gray-700 hover:text-gray-950 transition">اتصل بنا</a>
-      <br>
       <a href="https://wa.me/9660507922240" class="text-2xl font-semibold leading-6 text-gray-700 hover:text-gray-950 transition">واتساب: +966507922240</a>
       <a href="tel:+966507922240" class="text-2xl font-semibold leading-6 text-gray-700 hover:text-gray-950 transition">جوال: +966507922240</a>
     </div>
@@ -47,7 +46,7 @@
     <div class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
       <div class="flex items-center justify-between">
         <a href="#" class="p-1.5">
-          <img class="w-[200px]" src="./imgs/logo.png" alt="">
+          <img class="w-[200px]" src="./imgs/logo.png" alt="Logo">
         </a>
         <button id="close-menu-button" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Close menu</span>
@@ -63,7 +62,6 @@
             <a href="#" class="-mx-3 block rounded-lg text-2xl font-medium px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">خدماتنا</a>
             <a href="#" class="-mx-3 block rounded-lg text-2xl font-medium px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">معرض اعمالنا</a>
             <a href="#" class="-mx-3 block rounded-lg text-2xl font-medium px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">اتصل بنا</a>
-            <br>
             <a href="https://wa.me/9660507922240" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">واتساب: +966507922240</a>
             <a href="tel:+966507922240" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">جوال: +966507922240</a>
           </div>
@@ -72,52 +70,94 @@
     </div>
   </div>
 </header>
+
+<style>
+@media (max-width: 1024px) {
+  .lg\\:hidden {
+    display: none;
+  }
+  .lg\\:flex {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\\:hidden {
+    display: block;
+  }
+  .lg\\:flex {
+    display: none;
+  }
+}
+</style>
+
+<script>
+document.getElementById('menu-button').addEventListener('click', function() {
+  document.getElementById('mobile-menu').classList.toggle('hidden');
+});
+
+document.getElementById('close-menu-button').addEventListener('click', function() {
+  document.getElementById('mobile-menu').classList.add('hidden');
+});
+</script>
+
     <!-- End Header -->
 
     <!-- Start Hero Section -->
 
 <section
-  class="relative mt-5 mb-5 bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat"
+  class="relative mt-5 mb-5 bg-[url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80')] bg-cover bg-center bg-no-repeat"
 >
   <div
     class="absolute inset-0 bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
   ></div>
 
   <div
-    class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+    class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
   >
     <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-      <h1 class="text-3xl font-extrabold w-[600px] text-white sm:text-5xl" style="line-height: 1.2;">
+      <h1 class="text-3xl font-extrabold text-white sm:text-5xl" style="line-height: 1.2;">
         فني نجار بالرياض، معلمين فك وتركيب مطابخ بالرياض، نجار موبيليا بالرياض
       </h1>
 
-      <p class="mt-4 w-[800px] text-white sm:text-2xl/relaxed">
+      <p class="mt-4 text-white sm:text-2xl">
         معلم نجارة .. تميزنا وما زلنا في أعمال المقاولات وذلك في مجال ب النجارة بالرياض صيانة وترميم النجارة والموبيليا، نجار دولايب بالرياض كما نفخر بشهادة عملائنا في أننا معلمين نجارة الأولى بالرياض ، وفك ونقل دواليب غرف نوم ومطابخ بالرياض
       </p>
-      <br>
-      <p class="mt-4 w-[800px] text-white sm:text-2xl/relaxed">
-صيانة غرف نوم نغطي جميع أحياء الرياض معلم نجارة الرياض نجار تركيب وفك موبيليا بالرياض،
+      <p class="mt-4 text-white sm:text-2xl">
+        صيانة غرف نوم نغطي جميع أحياء الرياض معلم نجارة الرياض نجار تركيب وفك موبيليا بالرياض،
       </p>
 
-      <div class="mt-8 flex flex-wrap gap-4 text-center">
+      <div class="mt-8 flex flex-wrap justify-center gap-4 text-center sm:justify-start">
         <a
           href="https://wa.me/9660507922240"
-          class="block w-full rounded bg-rose-600 px-12 py-3 text-2xl font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+          class="block w-full rounded bg-rose-600 px-8 py-3 text-xl font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto sm:text-2xl"
         >
           واتساب
         </a>
 
         <a
           href="tel:+966507922240"
-          class="block w-full rounded bg-white px-12 py-3 text-2xl font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+          class="block w-full rounded bg-white px-8 py-3 text-xl font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto sm:text-2xl"
         >
           جوال
         </a>
       </div>
     </div>
-
   </div>
 </section>
+
+<style>
+@media (min-width: 640px) {
+  section h1 {
+    width: auto;
+  }
+
+  section p {
+    width: auto;
+  }
+}
+</style>
+
     <!-- End Hero Section -->
 
     <!-- Cards -->
@@ -295,7 +335,7 @@
         <div class="flex justify-center">
             <div class="text-center md:max-w-xl lg:max-w-3xl">
                 <h2 class="mb-12 px-6 text-5xl font-bold">
-                    ـــــــ تواصل بنا الأن ـــــــ
+                     تواصل بنا الأن 
                 </h2>
             </div>
         </div>
@@ -399,23 +439,44 @@
     <!-- ContactUs -->
 
     <!-- Floating Button -->
-<div class = "group fixed bottom-0 left-12 p-8  flex items-end justify-end w-36 h-36 ">
-    <!-- main -->
-    <div class = "text-white shadow-xl flex items-center justify-center p-5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 z-50 absolute  ">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 group-hover:rotate-90 transition  transition-all duration-[0.6s]">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-    </div>
-    <!-- sub left -->
-    <div class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16   flex  p-2 hover:p-3 bg-green-300 scale-100 hover:bg-green-400 text-white">
-                <a href="https://wa.me/+9660507922240" class="w-[40px] h-[40px] text-center text-gray-950 text-4xl"><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
-    <!-- sub top -->
-    <div class="absolute mb-5 rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-16  flex  p-2 hover:p-3 bg-blue-300 hover:bg-blue-400  text-white">
-        <a href="tel:+966507922240" class="w-[40px] h-[40px] text-center text-gray-950 text-4xl"><i class="fa-solid fa-phone"></i></a>
-    </div>
+<div class="group fixed bottom-0 left-12 p-8 flex items-end justify-end w-36 h-36">
+  <!-- main -->
+  <div class="text-white shadow-xl flex items-center justify-center p-5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 z-50 absolute">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 group-hover:rotate-90 transition transition-all duration-[0.6s]">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+    </svg>
+  </div>
+  <!-- sub left -->
+  <div class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16 flex p-2 hover:p-3 bg-green-300 hover:bg-green-400 text-white">
+    <a href="https://wa.me/+9660507922240" class="w-[40px] h-[40px] text-center text-gray-950 text-4xl"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  <!-- sub top -->
+  <div class="absolute mb-5 rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-16 flex p-2 hover:p-3 bg-blue-300 hover:bg-blue-400 text-white">
+    <a href="tel:+966507922240" class="w-[40px] h-[40px] text-center text-gray-950 text-4xl"><i class="fa-solid fa-phone"></i></a>
+  </div>
 </div>
+
+<style>
+@media (max-width: 768px) {
+  .group .w-10, .group .h-10 {
+    width: 2rem;
+    height: 2rem;
+  }
+
+@media (max-width: 640px) {
+  .group .p-8 {
+    padding: 1rem;
+  }
+
+  .group .w-36, .group .h-36 {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+}
+</style>
+
     <!-- Floating Button -->
 
     <!-- Start Footer -->
